@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
     self.tabBar.opaque = NO;
-    
+      
     TestViewController *home = [[TestViewController alloc] init];
     [self addChildViewController:home andWithTitle:@"首页" andWithImage:@"fx_home_homeicon" andWithSelectedImage:@"fx_home_homeicon2"];
     
