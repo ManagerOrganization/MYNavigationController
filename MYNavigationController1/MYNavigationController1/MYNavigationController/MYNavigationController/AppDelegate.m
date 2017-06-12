@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MYNavigationController.h"
 #import "ViewController.h"
+#import "TestViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,10 +23,19 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     
-    ViewController *viewController = [[ViewController alloc] init];
-    MYNavigationController *navigationController = [[MYNavigationController alloc] initWithRootViewController:viewController];
     
-    self.window.rootViewController = navigationController;
+    TestViewController *mainVC = [[TestViewController alloc] init];
+    mainVC.tabBarItem.title = @"首页";
+    
+    TestViewController *avc = [[TestViewController alloc] init];
+    avc.tabBarItem.title = @"发现";
+    
+    UITabBarController *tabbar = [[UITabBarController alloc] init];
+    tabbar.viewControllers = @[mainVC, avc];
+    
+    MYNavigationController *navC = [[MYNavigationController alloc] initWithRootViewController:tabbar];
+    
+    self.window.rootViewController = navC;
     
     return YES;
 }
