@@ -42,10 +42,11 @@
     if (gestureRecognizer.view == self.view) {
         CGPoint translate = [gestureRecognizer translationInView:self.view];
         BOOL possible = translate.x != 0 && fabs(translate.y) == 0;
-        if (possible)
+        if (possible) {
             return YES;
-        else
+        } else {
             return NO;
+        }
         return YES;
     }
     return NO;
@@ -82,7 +83,6 @@
         appDelegate.screenShotView.hidden = NO;
     } else if (panGesture.state == UIGestureRecognizerStateChanged) {
         CGPoint point_inView = [panGesture translationInView:self.view];
-        
         if (point_inView.x >= 10) {
             rootViewController.view.transform = CGAffineTransformMakeTranslation(point_inView.x - 10, 0);
             presentedViewController.view.transform = CGAffineTransformMakeTranslation(point_inView.x - 10, 0);
