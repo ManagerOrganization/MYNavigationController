@@ -9,6 +9,7 @@
 #import "MYTabBarController.h"
 #import "TestViewController.h"
 #import "MYNavigationController.h"
+#import "HKNavigationController.h"
 
 @interface MYTabBarController ()
 
@@ -46,7 +47,7 @@
     [childViewController.tabBarItem setTitleTextAttributes:textSelectAttrs forState:UIControlStateSelected];
     childViewController.tabBarItem.image = [UIImage imageNamed:image];
     childViewController.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    MYNavigationController *navController = [[MYNavigationController alloc] initWithRootViewController:childViewController];
+    HKNavigationController *navController = [[HKNavigationController alloc] initWithRootViewController:childViewController];
     [self addChildViewController:navController];
 }
 

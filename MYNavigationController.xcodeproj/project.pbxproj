@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32E1AB5D2064A7CA0072A1E4 /* UIViewController+NavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB5A2064A7C90072A1E4 /* UIViewController+NavigationExtension.m */; };
+		32E1AB5E2064A7CA0072A1E4 /* HKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB5C2064A7CA0072A1E4 /* HKNavigationController.m */; };
+		32E1AB612064A8630072A1E4 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB602064A8630072A1E4 /* UIBarButtonItem+Extension.m */; };
 		4CD045F91EE6866D005A69F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD045F81EE6866D005A69F1 /* main.m */; };
 		4CD045FC1EE6866D005A69F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD045FB1EE6866D005A69F1 /* AppDelegate.m */; };
 		4CD045FF1EE6866D005A69F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD045FE1EE6866D005A69F1 /* ViewController.m */; };
@@ -39,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32E1AB592064A7C90072A1E4 /* HKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKNavigationController.h; sourceTree = "<group>"; };
+		32E1AB5A2064A7C90072A1E4 /* UIViewController+NavigationExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationExtension.m"; sourceTree = "<group>"; };
+		32E1AB5B2064A7C90072A1E4 /* UIViewController+NavigationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationExtension.h"; sourceTree = "<group>"; };
+		32E1AB5C2064A7CA0072A1E4 /* HKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKNavigationController.m; sourceTree = "<group>"; };
+		32E1AB5F2064A8630072A1E4 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		32E1AB602064A8630072A1E4 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		4CD045F41EE6866D005A69F1 /* MYNavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYNavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD045F81EE6866D005A69F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CD045FA1EE6866D005A69F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +99,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32E1AB582064A7BE0072A1E4 /* HKNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				32E1AB592064A7C90072A1E4 /* HKNavigationController.h */,
+				32E1AB5C2064A7CA0072A1E4 /* HKNavigationController.m */,
+				32E1AB5B2064A7C90072A1E4 /* UIViewController+NavigationExtension.h */,
+				32E1AB5A2064A7C90072A1E4 /* UIViewController+NavigationExtension.m */,
+				32E1AB5F2064A8630072A1E4 /* UIBarButtonItem+Extension.h */,
+				32E1AB602064A8630072A1E4 /* UIBarButtonItem+Extension.m */,
+			);
+			path = HKNavigationController;
+			sourceTree = "<group>";
+		};
 		4CD045EB1EE6866D005A69F1 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +135,9 @@
 		4CD045F61EE6866D005A69F1 /* MYNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				4CD046371EE6935C005A69F1 /* MYTabBarController.h */,
+				4CD046381EE6935C005A69F1 /* MYTabBarController.m */,
+				32E1AB582064A7BE0072A1E4 /* HKNavigationController */,
 				4CD0462A1EE6876F005A69F1 /* MYNavigationController */,
 				4CD045FA1EE6866D005A69F1 /* AppDelegate.h */,
 				4CD045FB1EE6866D005A69F1 /* AppDelegate.m */,
@@ -160,8 +185,6 @@
 			children = (
 				4CD0462B1EE68784005A69F1 /* MYNavigationController.h */,
 				4CD0462C1EE68784005A69F1 /* MYNavigationController.m */,
-				4CD046371EE6935C005A69F1 /* MYTabBarController.h */,
-				4CD046381EE6935C005A69F1 /* MYTabBarController.m */,
 				4CD046311EE68A48005A69F1 /* MYScreenShotView.h */,
 				4CD046321EE68A48005A69F1 /* MYScreenShotView.m */,
 			);
@@ -305,8 +328,11 @@
 				4CD0462D1EE68784005A69F1 /* MYNavigationController.m in Sources */,
 				4CD046361EE68E8A005A69F1 /* TestViewController.m in Sources */,
 				4CD045FC1EE6866D005A69F1 /* AppDelegate.m in Sources */,
+				32E1AB612064A8630072A1E4 /* UIBarButtonItem+Extension.m in Sources */,
 				4CD046391EE6935C005A69F1 /* MYTabBarController.m in Sources */,
 				4CD046331EE68A48005A69F1 /* MYScreenShotView.m in Sources */,
+				32E1AB5D2064A7CA0072A1E4 /* UIViewController+NavigationExtension.m in Sources */,
+				32E1AB5E2064A7CA0072A1E4 /* HKNavigationController.m in Sources */,
 				4CD045F91EE6866D005A69F1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
